@@ -36,13 +36,13 @@ jobs:
     
 
     steps:
-    - name: Terraform Plan
-      id: plan
-      run: terraform plan 
-
     - name: Terraform Init
       id: init
       run: terraform init
 
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan 
+    
     # - name: Terraform Apply
     #   run: terraform apply -auto-approve
