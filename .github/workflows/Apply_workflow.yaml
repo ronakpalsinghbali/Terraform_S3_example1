@@ -33,6 +33,7 @@ jobs:
     needs: job1
     name: "Terraform Plan and Apply"
     runs-on: ubuntu-latest
+    container: job1
 
     steps:
     - name: Terraform Plan

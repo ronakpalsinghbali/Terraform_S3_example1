@@ -33,6 +33,7 @@ jobs:
     name: "Terraform Plan and Destroy"
     runs-on: ubuntu-latest
     needs: job1
+    container: job1
 
     steps:
     - name: Terraform Plan
