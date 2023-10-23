@@ -33,7 +33,7 @@ jobs:
     name: "Terraform Plan and Destroy"
     runs-on: [self-hosted, windows, x64]
     needs: job1
-    container: job1
+    
 
     steps:
     - name: Terraform Plan

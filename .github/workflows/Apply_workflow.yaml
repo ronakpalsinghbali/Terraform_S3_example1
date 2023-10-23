@@ -33,7 +33,7 @@ jobs:
     needs: job1
     name: "Terraform Plan and Apply"
     runs-on: [self-hosted, windows, x64]
-    container: job1
+    
 
     steps:
     - name: Terraform Plan
